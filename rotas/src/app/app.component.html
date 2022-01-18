@@ -1,0 +1,18 @@
+<div *ngIf="mostrarMenu">
+  <button mat-button style="float: right;" routerLink="">Modulo Rotas</button>
+  <button mat-button routerLinkActive="active-link" routerLink="/login">Login</button>
+  <button mat-button routerLinkActive="active-link" routerLink="/cursos" [queryParams]="{pagina: 1}">Cursos</button>
+  <!-- <button  mat-button routerLinkActive="active-link"  [routerLink]="['curso', idCurso.value]">Curso com Id</button> -->
+  <button mat-button routerLinkActive="active-link" routerLink="/alunos">Alunos</button>
+</div>
+<mat-divider></mat-divider>
+
+<!-- <mat-card> -->
+<!-- <p>Entre com o id do curso</p>
+<mat-form-field style="width: 100%" appearance="fill">
+    <mat-label>id</mat-label>
+    <input matInput #idCurso>
+  </mat-form-field> -->
+<router-outlet></router-outlet>
+<!-- </mat-card> -->
+<br><br>

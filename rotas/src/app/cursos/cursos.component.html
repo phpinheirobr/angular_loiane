@@ -1,0 +1,12 @@
+<p>lista de cursos</p>
+<p>Pagina: {{ pagina }}</p>
+
+<mat-selection-list  [multiple]="false">
+    <mat-list-option *ngFor="let curso of cursos"
+    [routerLink]="['/cursos', curso.id]">
+      {{ curso?.nome }}
+    </mat-list-option>
+  </mat-selection-list>
+  <button mat-raised-button color="primary"
+  (click)="proxPagina()"
+  >Prox. Página</button>

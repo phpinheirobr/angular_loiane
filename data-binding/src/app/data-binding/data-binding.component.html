@@ -1,0 +1,45 @@
+<!-- <section class="property-bin">
+    <article>
+        <h3>interpolation/interpolação</h3>
+        <p>string renderizada com interpolação: {{ url }}</p>
+    </article>
+    <h3>property binding</h3>
+    <article>
+        <img src="{{ urlImagem }}">
+        <img [src]="urlImagem">
+    </article>
+</section>
+
+<article>
+    <h3>Event binding</h3>
+    <div>
+        <button class="btn btn-primary" (click)="botaoClicado()">me clique</button>
+        <br><br>
+        <input type="text" (keyup)="onKeyUp($event)" (keyup.enter)="salvarValor(campoInput.value)"
+            (blur)="salvarValor(campoInput.value)" #campoInput>
+
+        <p>valor atual: {{ valorAtual }}</p>
+        <p>valor salvo: {{ valorSalvo }}</p>
+
+        <input type="text" [ngModel]="nome" (ngModelChange)="nome = $event">
+
+        <p>{{ nome}}</p>
+
+
+        <br>
+        <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()" [class.highlight]="isMouseOver">passe o mouse
+            sobre mim!</span>
+    </div>
+</article>  -->
+
+<section class="input-output-properties">
+    <article>
+        <h3>Input/Output properties</h3>
+        <app-curso [nomeCurso]="nomeDoCurso"></app-curso>
+
+        <contador [valor]="valorInicial"
+        (mudouValor)="onMudouValor($event)"
+        ></contador>
+    </article>
+
+</section>

@@ -1,0 +1,15 @@
+<h5>Login</h5>
+
+<mat-form-field style="width: 100%;" appearance="fill">
+    <mat-label>Usuário</mat-label>
+    <input matInput type="text" [(ngModel)]="usuario.nome">
+  </mat-form-field>
+  <mat-form-field style="width: 100%;" appearance="fill">
+    <mat-label >Senha</mat-label>
+    <input type="password" matInput [(ngModel)]="usuario.senha">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" 
+(click)="fazerLogin()">
+Login
+</button>
